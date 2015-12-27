@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FooBar example</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+        <style>
+            body {
+                font: 14px/21px 'Open Sans', Arial, sans-serif;
+                color: #262626;
+            }
+            body * {
+                box-sizing: border-box;
+            }
+            
+            .page {
+                max-width: 500px;
+                width: 100%;
+                margin: 0 auto;
+                display: block;
+            }
+            
+            h2 {
+                font: 700 24px/26px 'Open Sans', Arial, sans-serif;
+                margin-bottom: 12px;
+            }
+            
+            #start {
+                display: block;
+                width: 100px;
+                padding: 12px;
+                border: 1px solid #eee;
+                background: #fff;
+                border-radius: 5px;
+                margin: 12px auto;
+                cursor: pointer;
+                font-weight: 700;
+                
+                -webkit-appearance: none;
+                   -moz-appearance: none;
+            }
+            #start:hover,
+            #start:active {
+                background: #eee;
+            }
+             
+            #list {
+                float: left;
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+            }
+            #list .outer {
+                float: left;
+                position: relative;
+                width: 25%;
+                padding: 12px;
+                opacity: 0;
+                background: #eee;
+            }
+            #list .outer .inner {
+                float: left;
+                position: relative;
+                width: 100%;
+                border: 1px solid #eee;
+                padding: 12px;
+                text-align: center;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="page">
+            <h2>FooBar Example</h2>
+            <p>
+                This very basic example of the FooBar 'problem' where JavaScript loops along a set amount of numbers and checks every one of these.
+                A number that is divisible by 3, is named Foo and a number that is divisible by 5 is named Bar.
+                Ofcourse, a number that is divisible by both, is named FooBar.
+            </p>
+            <button id="start" onclick="foobar.run();">Start</button>
+            <span id="list">
+            </span>
+        </div>
+        <script type="text/javascript" src="TweenMax.min.js" async></script>
+        <script type="text/javascript" src="foobar.js" async></script>
+    </body>
+</html>
