@@ -1,5 +1,5 @@
-var foobar,
-    FooBarClass = function(limit) {
+var fizzbuzz,
+    FizzBuzzClass = function(limit) {
         this.limit = limit || 100;
         
         this.setLimit = function(limit){
@@ -20,10 +20,10 @@ var foobar,
                     result = '';
                 
                 if(i % 3 === 0) {
-                    output += 'Foo';
+                    output += 'Fizz';
                 }
                 if(i % 5 === 0) {
-                    output += 'Bar';
+                    output += 'Buzz';
                 }
                 
                 result = (output.length > 0) ? output : i;
@@ -42,4 +42,4 @@ var foobar,
             TweenMax.staggerFromTo("#list .outer", 0.5, {y: 1000}, {opacity: 1, y: 0, backgroundColor: 'rgb(255,255,255)'}, 0.1)
         };
     };
-foobar = new FooBarClass();
+fizzbuzz = new FizzBuzzClass();
